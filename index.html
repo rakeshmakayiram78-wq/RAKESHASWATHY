@@ -1,166 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aswathy & Rakesh</title>
+  <title>Aswathy & Rakesh Wedding</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
 
-<style>
-body {
-margin: 0;
-font-family: 'Inter', sans-serif;
-background: #fffafa;
-color: #444;
-text-align: center;
-overflow-x: hidden;
-}
-
-/* 🌸 Floating flowers */
-.flower {
-position: fixed;
-width: 60px;
-opacity: 0.15;
-animation: float 10s infinite ease-in-out;
-}
-
-.flower1 { top: 10%; left: 5%; }
-.flower2 { bottom: 15%; right: 5%; animation-delay: 3s; }
-
-@keyframes float {
-0% { transform: translateY(0px); }
-50% { transform: translateY(-20px); }
-100% { transform: translateY(0px); }
-}
-
-.hero {
-padding: 100px 20px;
-background: linear-gradient(to bottom, #fdecef, #ffffff);
-}
-
-h1 {
-font-family: 'Playfair Display', serif;
-font-size: 44px;
-color: #b76e79;
-}
-
-.section {
-padding: 60px 20px;
-}
-
-.card {
-background: white;
-padding: 30px;
-margin: 20px auto;
-border-radius: 16px;
-max-width: 420px;
-box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-}
-
-.button {
-display: inline-block;
-margin: 10px;
-padding: 12px 26px;
-background: #b76e79;
-color: white;
-border-radius: 30px;
-text-decoration: none;
-}
-
-.countdown {
-font-size: 20px;
-margin-top: 20px;
-color: #b76e79;
-}
-
-img.couple {
-width: 160px;
-border-radius: 50%;
-margin-top: 20px;
-}
-
-.footer {
-font-size: 12px;
-color: #aaa;
-padding: 30px;
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- 🌸 Floating floral images -->
-<img class="flower flower1" src="https://i.imgur.com/9yG6R0D.png">
-<img class="flower flower2" src="https://i.imgur.com/9yG6R0D.png">
+<!-- MUSIC BUTTON -->
+<button onclick="playMusic()" class="music-btn">🎵 Play Music</button>
+<audio id="music" src="https://www.bensound.com/bensound-music/bensound-love.mp3"></audio>
 
-<div class="hero">
-<h1>Aswathy & Rakesh</h1>
-<p>We’re getting married 💍</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>Aswathy ❤️ Rakesh</h1>
+  <p>We're Getting Married</p>
+</section>
 
-<img class="couple" src="YOUR_PHOTO_LINK">
+<!-- COUNTDOWN -->
+<section class="section">
+  <h2>July 10, 2026</h2>
+  <div id="countdown"></div>
+</section>
 
-<!-- ⏳ Countdown -->
-<div class="countdown" id="countdown"></div>
-</div>
+<!-- STORY -->
+<section class="section">
+  <h2>Our Story</h2>
+  <p>From a simple hello to forever ❤️</p>
+</section>
 
-<div class="section">
-<div class="card">
-<h3>🌼 Haldi Ceremony</h3>
-<p>April 22, 2026</p>
-<p>Your Venue</p>
-</div>
+<!-- VENUE -->
+<section class="section">
+  <h2>Venue</h2>
+  <p>Kerala, India</p>
 
-<div class="card">
-<h3>💒 Wedding</h3>
-<p>April 23, 2026</p>
-<p>Your Venue</p>
-</div>
-</div>
+  <iframe 
+    src="https://maps.google.com/maps?q=kerala&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="80%" height="300">
+  </iframe>
+</section>
 
-<div class="section">
-<h3>Our Story ❤️</h3>
-<p>From a simple beginning to a lifetime together… we can’t wait to celebrate with you.</p>
-</div>
+<!-- GALLERY -->
+<section class="section">
+  <h2>Gallery</h2>
+  <img src="https://picsum.photos/300?1">
+  <img src="https://picsum.photos/300?2">
+  <img src="https://picsum.photos/300?3">
+</section>
 
-<div class="section">
-<h3>📍 Location</h3>
-<iframe src="YOUR_MAP_LINK" width="90%" height="250"
-style="border:0; border-radius:15px;"></iframe>
-</div>
+<!-- RSVP -->
+<section class="section">
+  <h2>RSVP</h2>
+  <a href="https://forms.gle/" target="_blank">Click Here to RSVP</a>
+</section>
 
-<div class="section">
-<h3>RSVP</h3>
+<!-- FOOTER -->
+<section class="footer">
+  <p>With Love ❤️ Aswathy & Rakesh</p>
+</section>
 
-<!-- Google Form -->
-<a class="button" href="YOUR_FORM_LINK" target="_blank">RSVP Form</a>
-
-<!-- WhatsApp RSVP -->
-<a class="button" href="https://wa.me/YOUR_NUMBER?text=Hi%20I%20am%20coming%20to%20your%20wedding!" target="_blank">
-WhatsApp RSVP
-</a>
-</div>
-
-<div class="footer">
-With love ✨ Aswathy & Rakesh
-</div>
-
-<script>
-// ⏳ Countdown Timer
-var countDownDate = new Date("April 22, 2026 00:00:00").getTime();
-
-var x = setInterval(function() {
-var now = new Date().getTime();
-var distance = countDownDate - now;
-
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-document.getElementById("countdown").innerHTML =
-days + " days " + hours + " hrs to go 💖";
-
-}, 1000);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
