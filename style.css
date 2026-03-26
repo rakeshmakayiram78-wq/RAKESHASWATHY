@@ -1,4 +1,60 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf6f8;
+  margin: 0;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: white;
+  padding: 60px 20px;
+  font-size: 28px;
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Venue cards */
+.venue {
+  margin-bottom: 40px;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Countdown */
+#countdown {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e91e63;
+}
+body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
