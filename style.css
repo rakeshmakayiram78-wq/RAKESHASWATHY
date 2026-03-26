@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #fff0f5;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://picsum.photos/1600/900") no-repeat center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+}
+
+/* SECTION */
+.section {
+  padding: 60px;
+}
+
+/* COUNTDOWN */
+#countdown {
+  font-size: 28px;
+  color: #b76e79;
+}
+
+/* GALLERY */
+img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #f8c8dc;
+  padding: 30px;
+}
+
+/* MUSIC BUTTON */
+.music-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: #b76e79;
+  color: white;
+  border: none;
+}
