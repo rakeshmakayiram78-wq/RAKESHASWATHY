@@ -43,13 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
   let current = 0;
 
+ document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  if (slides.length === 0) return; // safety check
+
   slides[current].classList.add('active'); // show first slide
 
   setInterval(() => {
     slides[current].classList.remove('active'); // hide current
     current = (current + 1) % slides.length;    // next slide index
     slides[current].classList.add('active');    // show next
-  }, 3000); // change every 3 seconds
+  }, 3000); // 3 seconds
 });
   
   if (distance < 0) {
