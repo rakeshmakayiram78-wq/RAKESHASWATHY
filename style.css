@@ -7,10 +7,8 @@ body {
 
 /* Hero section */
 .hero-image img {
-  width: 70%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 12px;
+  width: 60%;
+  max-width: 500px;
 }
 .hero {
   text-align: center;
