@@ -1,4 +1,4 @@
-/* General */
+/* GENERAL */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,24 +13,26 @@ body {
 
 .names {
   font-family: 'Great Vibes', cursive;
-  font-size: 52px;
+  font-size: 48px;
   color: #b76e79;
   margin: 0;
+  line-height: 1.1;
+  word-break: keep-all; /* prevent breaking on small screens */
 }
 
 .date {
-  font-size: 22px;
+  font-size: 20px;
   color: #555;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 .main-photo {
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   border-radius: 15px;
-  margin: 0 auto 20px;
   display: block;
+  margin: 0 auto 20px;
 }
 
 /* SECTIONS */
@@ -52,8 +54,8 @@ h2 {
 }
 
 .venue-box {
-  width: 45%;
-  margin-bottom: 20px;
+  flex: 1 1 300px;
+  max-width: 500px;
 }
 
 .venue-box iframe {
@@ -65,7 +67,7 @@ h2 {
 
 /* COUNTDOWN */
 #countdown {
-  font-size: 28px;
+  font-size: 26px;
   color: #e91e63;
   font-weight: bold;
   margin-top: 15px;
@@ -76,7 +78,7 @@ h2 {
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -98,4 +100,17 @@ h2 {
 .footer {
   background: #f8c8dc;
   padding: 30px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .names {
+    font-size: 36px;
+  }
+  .main-photo {
+    max-width: 90%;
+  }
+  .venue-box {
+    flex: 1 1 100%;
+  }
 }
