@@ -85,25 +85,29 @@ h2 {
   transform: scale(1.05);
 }
 
-/* Full-width slideshow */
 .slideshow-container {
   position: relative;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  height: auto;
+  margin: 0 auto;
 }
 
 .slideshow-container img.slide {
-  width: 100%;        /* full width of container */
-  height: auto;       /* keep aspect ratio */
-  display: none;      /* hide all by default */
+  position: absolute;       /* stack images on top of each other */
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: auto !important;
+  opacity: 0;               /* hide all initially */
+  transition: opacity 1s ease-in-out; /* smooth fade */
   border-radius: 10px;
 }
 
-/* Optional: fade animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
+.slideshow-container img.slide.active {
+  opacity: 1;               /* show only the active slide */
+  z-index: 1;
 }
 
 @keyframes fade {
