@@ -22,9 +22,9 @@ body {
 }
 
 /* Headings */
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
+h2h2 {
+  font-family: 'Great Vibes', cursive;  /* same as names */
+  font-size: 36px;
   color: #b76e79;
   margin-bottom: 20px;
 }
