@@ -36,11 +36,11 @@ h2 {
   margin: 10px 0 20px;
 }
 
-/* Main Photo */
 .main-photo {
   width: 90%;
-  max-width: 400px;
-  height: auto;
+  max-width: 700px;     /* wider image */
+  height: 300px;        /* fixed height for landscape */
+  object-fit: cover;    /* crops image to fit nicely */
   border-radius: 15px;
   display: block;
   margin: 0 auto 20px;
