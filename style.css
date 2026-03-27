@@ -11,6 +11,22 @@ body {
   padding: 20px;
 }
 
+/* Names (DO NOT CHANGE) */
+.names {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Headings (NEW FONT) */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #b76e79;
+}
+
+/* Body text stays clean */
+body {
+  font-family: 'Poppins', sans-serif;
+}
 .names {
   font-family: 'Great Vibes', cursive;
   font-size: 48px;
