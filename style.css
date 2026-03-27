@@ -90,23 +90,30 @@ h2 {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-  height: auto;
   margin: 0 auto;
 }
 
+/* Wrapper keeps height consistent for loaded images */
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* 3:2 aspect ratio for gallery images */
+}
+
 .slideshow-container img.slide {
-  position: absolute;       /* stack images on top of each other */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100% !important;
-  height: auto !important;
-  opacity: 0;               /* hide all initially */
-  transition: opacity 1s ease-in-out; /* smooth fade */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fill container nicely */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   border-radius: 10px;
 }
 
 .slideshow-container img.slide.active {
-  opacity: 1;               /* show only the active slide */
+  opacity: 1;
   z-index: 1;
 }
 
