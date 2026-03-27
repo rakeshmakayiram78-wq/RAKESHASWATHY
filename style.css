@@ -96,7 +96,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-
+  background: url("https://picsum.photos/1600/900") no-repeat center;
   background-size: cover;
   color: white;
   display: flex;
