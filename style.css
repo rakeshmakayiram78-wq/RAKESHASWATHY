@@ -28,7 +28,7 @@ body {
 
 /* Image (balanced size) */
 .main-photo {
-  width: 70%;
+  width: 800%;
   max-width: 400px;
   height: auto;
   border-radius: 15px;
