@@ -32,24 +32,27 @@ const countdown = setInterval(() => {
   document.getElementById("countdown").innerHTML =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-  // Simple auto-scroll slider
+  // Auto-scrolling gallery slider
 const slider = document.getElementById('gallerySlider');
 let scrollAmount = 0;
-const scrollStep = 260; // slightly larger than image width
+const scrollStep = 265; // width of image + gap
 const scrollDelay = 2000; // 2 seconds per slide
 
 function autoScrollSlider() {
-    scrollAmount += scrollStep;
-    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-        scrollAmount = 0; // loop back to start
-    }
-    slider.scrollTo({
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
+  scrollAmount += scrollStep;
+  
+  // If we reach the end, go back to start
+  if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+    scrollAmount = 0;
+  }
+  
+  slider.scrollTo({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
 }
 
-// Start auto-scroll
+// Start the auto-scroll
 setInterval(autoScrollSlider, scrollDelay);
   
   if (distance < 0) {
