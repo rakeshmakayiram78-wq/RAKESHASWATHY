@@ -11,37 +11,32 @@ body {
   padding: 20px;
 }
 
-/* Names (DO NOT CHANGE) */
-.names {
-  font-family: 'Great Vibes', cursive;
-}
-
-/* Headings (NEW FONT) */
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  color: #b76e79;
-}
-
-/* Body text stays clean */
-body {
-  font-family: 'Poppins', sans-serif;
-}
+/* Names */
 .names {
   font-family: 'Great Vibes', cursive;
   font-size: 48px;
   color: #b76e79;
   margin: 0;
   line-height: 1.1;
-  word-break: keep-all; /* prevent breaking on small screens */
+  word-break: keep-all;
 }
 
+/* Headings */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #b76e79;
+  margin-bottom: 20px;
+}
+
+/* Date */
 .date {
   font-size: 20px;
   color: #555;
   margin: 10px 0 20px;
 }
 
+/* Main Photo */
 .main-photo {
   width: 90%;
   max-width: 400px;
@@ -54,12 +49,6 @@ body {
 /* SECTIONS */
 .section {
   padding: 40px 20px;
-}
-
-h2 {
-  
-  margin-bottom: 20px;
-  color: #444;
 }
 
 /* VENUE */
@@ -124,9 +113,11 @@ h2 {
   .names {
     font-size: 36px;
   }
+
   .main-photo {
     max-width: 90%;
   }
+
   .venue-box {
     flex: 1 1 100%;
   }
