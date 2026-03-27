@@ -8,9 +8,7 @@ body {
 .hero {
   text-align: center;
   padding: 80px 40px;
-  .hero {
-  
-}
+   background: #fdf6f8;
 }
 
 /* Names */
@@ -23,14 +21,14 @@ body {
 
 /* Date */
 .date {
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
   margin-bottom: 25px;
 }
 
 /* Image (balanced size) */
 .main-photo {
-  width: 50%;
+  width: 70%;
   max-width: 400px;
   height: auto;
   border-radius: 15px;
@@ -98,7 +96,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("https://picsum.photos/1600/900") no-repeat center;
+
   background-size: cover;
   color: white;
   display: flex;
