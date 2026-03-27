@@ -35,22 +35,18 @@ const countdown = setInterval(() => {
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 
-function showSlides() {
-  slides.forEach((slide) => {
-    slide.style.display = 'none'; // hide all
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
 
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
+  slides[current].classList.add('active'); // show first slide
 
-  slides[slideIndex - 1].style.display = 'block';
-  slides[slideIndex - 1].classList.add('fade');
-
-  setTimeout(showSlides, 3000); // change image every 3 seconds
-}
-
-// start slideshow
-showSlides();
+  setInterval(() => {
+    slides[current].classList.remove('active'); // hide current
+    current = (current + 1) % slides.length;    // next slide index
+    slides[current].classList.add('active');    // show next
+  }, 3000); // change every 3 seconds
+});
   
   if (distance < 0) {
     clearInterval(countdown);
