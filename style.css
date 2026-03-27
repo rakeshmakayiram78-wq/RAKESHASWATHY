@@ -11,11 +11,11 @@ body {
   background: #fdf6f8;
 }
 
-/* Names */
 .names {
   font-family: 'Great Vibes', cursive;
-  font-size: 50px;
+  font-size: 52px;
   color: #b76e79;
+  margin-top: 0;       /* remove extra space */
   margin-bottom: 5px;
 }
 
