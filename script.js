@@ -26,10 +26,9 @@ updateCountdown(); // initial call
 // SLIDESHOW
 document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
-  let current = 0;
-
   if (slides.length === 0) return;
 
+  let current = 0;
   slides[current].classList.add('active');
 
   setInterval(() => {
