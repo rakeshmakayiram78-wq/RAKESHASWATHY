@@ -28,10 +28,11 @@ body {
 
 /* Image (balanced size) */
 .main-photo {
-  width: 75%;          /* increased from 50% */
-  max-width: 6000px;    /* allows bigger display */
-  height: auto;
-  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-top: 10px;
 }
 /* Sections */
 .section {
