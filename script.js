@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
   let current = 0;
 
+ document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
   slides[current].classList.add('active'); // show first slide
 
   setInterval(() => {
