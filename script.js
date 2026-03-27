@@ -32,6 +32,26 @@ const countdown = setInterval(() => {
   document.getElementById("countdown").innerHTML =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
+  // Simple auto-scroll slider
+const slider = document.getElementById('gallerySlider');
+let scrollAmount = 0;
+const scrollStep = 260; // slightly larger than image width
+const scrollDelay = 2000; // 2 seconds per slide
+
+function autoScrollSlider() {
+    scrollAmount += scrollStep;
+    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0; // loop back to start
+    }
+    slider.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}
+
+// Start auto-scroll
+setInterval(autoScrollSlider, scrollDelay);
+  
   if (distance < 0) {
     clearInterval(countdown);
     document.getElementById("countdown").innerHTML = "💍 It's Wedding Time!";
