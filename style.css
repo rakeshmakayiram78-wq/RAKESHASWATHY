@@ -69,7 +69,7 @@ h2 {
 .gallery img:hover {
   transform: scale(1.05);
 }
-document.getElementById("countdown").innerHTML =
+
   `💖 ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
 /* Countdown */
 #countdown {
@@ -96,15 +96,6 @@ body {
   to { transform: scale(1.05); }
 }
 /* HERO */
-.hero {
-  height: 100vh;
-  background: transparent;
-  background-size: cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .hero h1 {
   font-family: 'Great Vibes', cursive;
