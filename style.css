@@ -28,11 +28,12 @@ body {
 
 /* Image (balanced size) */
 .main-photo {
-  width: 90%;
-  max-width: 800px;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  margin-top: 10px;
+  width: 90% !important;
+  max-width: 900px !important;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
 }
 /* Sections */
 .section {
