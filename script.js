@@ -31,29 +31,26 @@ const countdown = setInterval(() => {
 
   document.getElementById("countdown").innerHTML =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+// Full-width slideshow script
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-  // Auto-scrolling gallery slider
-const slider = document.getElementById('gallerySlider');
-let scrollAmount = 0;
-const scrollStep = 265; // width of image + gap
-const scrollDelay = 2000; // 2 seconds per slide
-
-function autoScrollSlider() {
-  scrollAmount += scrollStep;
-  
-  // If we reach the end, go back to start
-  if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-    scrollAmount = 0;
-  }
-  
-  slider.scrollTo({
-    left: scrollAmount,
-    behavior: 'smooth'
+function showSlides() {
+  slides.forEach((slide) => {
+    slide.style.display = 'none'; // hide all
   });
+
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+
+  slides[slideIndex - 1].style.display = 'block';
+  slides[slideIndex - 1].classList.add('fade');
+
+  setTimeout(showSlides, 3000); // change image every 3 seconds
 }
 
-// Start the auto-scroll
-setInterval(autoScrollSlider, scrollDelay);
+// start slideshow
+showSlides();
   
   if (distance < 0) {
     clearInterval(countdown);
