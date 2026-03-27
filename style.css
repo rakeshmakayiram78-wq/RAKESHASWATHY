@@ -28,8 +28,8 @@ body {
 
 /* Image (balanced size) */
 .main-photo {
-  width: 800%;
-  max-width: 400px;
+  width: 65%;          /* increased from 50% */
+  max-width: 550px;    /* allows bigger display */
   height: auto;
   border-radius: 15px;
 }
