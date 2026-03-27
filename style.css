@@ -85,14 +85,14 @@ h2 {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
 .slider {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden; /* hide scrollbar */
   gap: 15px;
   padding: 10px;
   scroll-behavior: smooth;
 }
-
 .slider img {
   height: 250px;
   width: auto;
