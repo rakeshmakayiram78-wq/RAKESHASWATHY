@@ -13,12 +13,13 @@ body {
 }
 
 /* Names (fancy style) */
-
 .names {
-  font-family: 'Great Vibes', cursive;
-  font-size: 52px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 48px;
   color: #b76e79;
+  margin-bottom: 10px;
 }
+
 /* Date */
 .date {
   font-size: 20px;
