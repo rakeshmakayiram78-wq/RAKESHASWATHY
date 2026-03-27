@@ -93,11 +93,10 @@ h2 {
   margin: 0 auto;
 }
 
-/* Wrapper keeps height consistent for loaded images */
 .slide-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 66.66%; /* 3:2 aspect ratio for gallery images */
+  padding-top: 66.66%; /* 3:2 aspect ratio */
 }
 
 .slideshow-container img.slide {
@@ -106,7 +105,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* fill container nicely */
+  object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   border-radius: 10px;
@@ -116,7 +115,6 @@ h2 {
   opacity: 1;
   z-index: 1;
 }
-
 @keyframes fade {
   from {opacity: 0.4}
   to {opacity: 1}
