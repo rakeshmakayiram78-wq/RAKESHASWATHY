@@ -70,13 +70,6 @@ h2 {
   transform: scale(1.05);
 }
 
-  `💖 ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
-/* Countdown */
-#countdown {
-  font-size: 22px;
-  font-weight: bold;
-  color: #e91e63;
-}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -115,7 +108,6 @@ body {
 
 /* GALLERY */
 img {
-  width: 250px;
   margin: 10px;
   border-radius: 10px;
 }
