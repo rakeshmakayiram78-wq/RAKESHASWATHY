@@ -23,24 +23,25 @@ body {
 
 /* Headings */
 h2 {
-  font-family: 'Great Vibes', cursive;  /* same as names */
+  font-family: 'Great Vibes', cursive;
   font-size: 36px;
   color: #b76e79;
   margin-bottom: 20px;
 }
 
-/* Date */
+/* Date under names */
 .date {
   font-size: 20px;
   color: #555;
   margin: 10px 0 20px;
 }
 
+/* Main Photo */
 .main-photo {
   width: 90%;
-  max-width: 700px;     /* wider image */
-  height: 300px;        /* fixed height for landscape */
-  object-fit: cover;    /* crops image to fit nicely */
+  max-width: 700px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 15px;
   display: block;
   margin: 0 auto 20px;
@@ -62,6 +63,15 @@ h2 {
 .venue-box {
   flex: 1 1 300px;
   max-width: 500px;
+}
+
+/* Venue Date Styling */
+.venue-date {
+  color: #b76e79;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+  letter-spacing: 1px;
 }
 
 .venue-box iframe {
@@ -116,6 +126,7 @@ h2 {
 
   .main-photo {
     max-width: 90%;
+    height: 220px;
   }
 
   .venue-box {
